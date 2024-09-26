@@ -9,6 +9,11 @@
     src: url('./avenir/AvenirLTStd-Medium.otf');
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
 body {
     background-color: white;
 }
@@ -36,8 +41,16 @@ body {
     margin-top: 144px;
 }
 
+#first-section article {
+    width: 500px;
+}
+
 #first-section img {
     margin-right: 64px;
+}
+
+#first-section button {
+    margin-top: 20px;
 }
 
 #explore-box {
