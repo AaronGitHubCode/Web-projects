@@ -1,0 +1,33 @@
+#!/bin/bash
+
+case $1 in
+    test)
+        if [[ $3 != '' ]]
+        then
+            case $2 in
+                *)
+                sass $2 | grep -A 10 $3
+                exit 0
+                ;;
+            esac
+        fi
+        sass $2
+    exit 0
+    ;;
+    compile)
+    if [ -f ./styles.css ]
+    then
+        rm -r ./styles.css
+    fi
+    if [ -f ./styles.css ]
+    then
+        rm -r ./styles.css
+    fi
+    sass $2 $3
+    ;;
+    clean)
+    rm -r styles.css styles.css.map
+    ;;
+esac
+
+clear

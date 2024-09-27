@@ -1,0 +1,207 @@
+$background_color: black;
+$font_color: white;
+$font_family: 'Helvetica';
+
+$background_image:  'https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*fp6g8h*_gcl_au*MjEzOTI5NTUxLjE3MjY4MTg0NzE.*_ga*ODA1NjQ0OTk3Ni4xNzI2ODE4NDk2*_ga_3LRZM6TM9L*MTcyNzI3NzUwOC4xNS4xLjE3MjcyNzc2OTEuMC4wLjA.';
+$locations_image:   'https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1mpj6zh*_gcl_au*MjEzOTI5NTUxLjE3MjY4MTg0NzE.*_ga*ODA1NjQ0OTk3Ni4xNzI2ODE4NDk2*_ga_3LRZM6TM9L*MTcyNzI3NzUwOC4xNS4xLjE3MjcyNzc2OTEuMC4wLjA.';
+
+$content-boxes: '.first-content-box', '.second-content-box';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font_family;
+    cursor: deful;
+}
+
+body {
+    background-color: $background_color;
+}
+
+@each $content-box in $content-boxes {
+    #{$content-box} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90vw;
+        height: 700px;
+        margin: auto;
+
+        @media only screen and (orientation: portrait) {
+            width: 100vw;
+            height: 400px;
+        }
+    }
+}
+
+.header {
+    $header-height: 69px;
+    $header-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: $background_color;
+    height: $header-height;
+    width: $header-width;
+    box-shadow: 0px 1px 0px white;
+
+    img {
+        position: fixed;
+        left: 0;
+        margin-left: 10px;
+        height: 50px;
+    }
+
+    &__nav {
+        color: white;
+
+        ul {
+            display: inline-flex;
+            list-style: none;
+            
+            li {
+                margin: 10px;
+                text-decoration: underline;
+            }
+        }
+
+        @media only screen and (orientation: portrait) {
+            display: none;
+        }
+    }
+}
+
+.first-content-box {
+    background-image: url($background_image);
+    text-align: center;
+
+    &__article {
+        width: 90vw;
+        background-color: $background_color;
+        color: white;
+
+        * {
+            padding: 10px;
+        }
+
+        @media only screen and (orientation: portrait) {
+            width: 100vw;
+        }
+    }
+}
+
+.second-content-box {
+    color: white;
+    background-image: url($locations_image);
+
+    h1 {
+        font-size: 50px;
+
+        @media only screen and (orientation: portrait) {
+            display: none;
+        }
+    }
+
+    &__locations {
+        display: flex;
+        justify-content: space-around;
+
+        &__article { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $background_color;
+            width: 300px;
+            height: 300px;
+            margin: 40px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    @media only screen and (orientation: portrait) {
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+.tea-of-the-month {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    color: white;
+
+    &__title {
+        h2 {
+            margin-top: 60px;
+        }
+
+        h3 {
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__container {
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+            margin-bottom: 40px;
+
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.web-info {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__article {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 10px;
+        place-content: center;
+        text-align: center;
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        h4 {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.footer {
+    color: white;
+    
+    @media only screen and (orientation: portrait) {
+        display: sticky;
+        bottom: 0;
+        border-top: solid 1px white;
+    }
+}
