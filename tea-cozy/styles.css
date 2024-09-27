@@ -55,6 +55,8 @@ header nav ul li {
     justify-content: center;
     text-align: center;
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*fp6g8h*_gcl_au*MjEzOTI5NTUxLjE3MjY4MTg0NzE.*_ga*ODA1NjQ0OTk3Ni4xNzI2ODE4NDk2*_ga_3LRZM6TM9L*MTcyNzI3NzUwOC4xNS4xLjE3MjcyNzc2OTEuMC4wLjA.');
+    background-position: center;
+    background-size: cover;
 }
 
 #our-mission {
