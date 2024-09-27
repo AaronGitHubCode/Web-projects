@@ -1,0 +1,5 @@
+@use 'styles' as st;
+
+@if st.$default-color == black {
+    $default-color: red;
+}

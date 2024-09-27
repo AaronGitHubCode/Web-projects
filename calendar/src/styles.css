@@ -1,0 +1,17 @@
+.cool-button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+}
+
+.cool-button:hover {
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
+    transition-property: box-shadow;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+    cursor: pointer;
+}
