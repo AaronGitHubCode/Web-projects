@@ -18,7 +18,7 @@
             <button>Open your shop</button>
         </article>
     </section>
-    <img src="./resources/background.svg" alt="Background Image Number One">
+    <img class="background-image" src="./resources/background.svg" alt="Background Image Number One">
     <section class="info">
         <article class="info__article">
             <h2>The most popular <br> sales platform in <br> country</h2>
@@ -39,12 +39,108 @@
             </div>
         </article>
     </section>
-    <div class="market">
-        <div class="market__article">
-            <img src="./resources/laptop.svg" alt="Laptop">
-            <h2>Be always first</h2>
+    <section class="groups">
+        <article class="groups__article">
+            <figure>
+                <img src="./resources/laptop.svg" alt="Laptop">
+                <figcaption><h2>Be always first</h2></figcaption>
+            </figure>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod soluta nisi vitae, laudantium esse hic maxime est beatae a laborum deserunt sint corrupti cum dolorem officiis magnam inventore sequi ipsum.</p>
+        </article>
+        <article class="groups__article">
+            <figure>
+                <img src="./resources/phone.svg" alt="Phone">
+                <figcaption><h2>Your shop is <br> where you are!</h2></figcaption>
+            </figure>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur fuga quibusdam eligendi veritatis assumenda expedita inventore cumque, asperiores molestias cupiditate exercitationem ipsum ad saepe incidunt nam? Quis qui cum repellendus!</p>
+        </article>
+        <article class="groups__article">
+            <h2>Increase <br> recognition your <br> brand!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nam adipisci sunt fugiat quas nemo error nisi ullam distinctio hic. Nihil sed iure recusandae laborum repellendus sit minus vitae hic?</p>
+            <img src="./resources/trumpet.svg" alt="Trumpet">
+        </article>
+    </section>
+    <section class="pricing">
+        <h1>Pricing</h1>
+        <article class="pricing__article pricing__article__basic">
+            <div class="pricing__article__price">
+                <h3>Basic</h3>
+                <p>$0</p>
+            </div>
+            <div class="pricing__article__features">
+                <p>100 MB HDD</p>
+                <p>1 Subdomain</p>
+                <p>2 E-mails</p>
+                <p>Two years license</p>
+                <p>Full support</p>
+            </div>
+            <button class="button button-basic">Begin</button>
+        </article>
+        <article class="pricing__article pricing__article__professional">
+            <div class="pricing__article__price">
+                <h3>Professional</h3>
+                <p>$25</p>
+                <p>Limited offer</p>
+            </div>
+            <div class="pricing__article__features">
+                <p>500 MB HDD</p>
+                <p>2 Subdomains</p>
+                <p>5 E-mails</p>
+                <p>One year license</p>
+                <p>Full support</p>
+            </div>
+            <button class="button button-professional">Begin</button>
+        </article>
+        <article class="pricing__article pricing__article__premium">
+            <div class="pricing__article__price">
+                <h3>Premium</h3>
+                <p>$60</p>
+                <p>Limited offer</p>
+            </div>
+            <div class="pricing__article__features">
+                <p>2 GB HDD</p>
+                <p>5 Subdomains</p>
+                <p>20 E-mails</p>
+                <p>Two years license</p>
+                <p>Full support</p>
+            </div>
+            <button class="button button-premium">Begin</button>
+        </article>
+    </section>
+    <section class="questions">
+        <h1>Any questions?</h1>
+        <h2>Leave your email address or call us!</h2>
+        
+        <div class="questions__email">
+            <img src="./resources/email.svg" alt="Email">
+            <p>info@bestshop.xyz</p>
         </div>
-    </div>
-    <footer></footer>
+
+        <div class="questions__phone">
+            <img src="./resources/phonenumber.svg" alt="Phone">
+            <p>123 456 789</p>
+        </div>
+
+        <article class="questions__form">
+            <form action="" method="post">
+                <label class="questions__form__name" for="name">NAME</label>
+                <input class="full-input" type="text" name="_name" id="name">
+                <br>
+                <label for="email">EMAIL</label>
+                <input class="full-input" type="email" name="_email" id="email">
+                <input type="checkbox" name="_consent" id="consent">
+                <label for="consent">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                <div class="questions__form__container">
+                    <input class="questions__form__container__submit" type="submit" value="Send">
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer class="footer">
+        <h2>OXYGENShop</h2>
+        <p>©️ 2022 OXYGEN, All Rights Reserved</p>
+        <img class="footer__twitter" src="./resources/twitter.svg" alt="Twitter Logo">
+        <img class="footer__facebook" src="./resources/facebook.svg" alt="Facebook Logo">
+    </footer>
 </body>
 </html>

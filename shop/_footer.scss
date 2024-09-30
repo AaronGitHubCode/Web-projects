@@ -1,0 +1,33 @@
+@use '_values.scss' as values;
+
+.footer {
+    position: relative;
+    display: block;
+    color: values.$primary_color;
+    font-family: values.$font_family;
+    font-weight: lighter;
+    box-shadow: -10px 0px 10px gray;
+    padding: 20px;
+
+    * {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 12px;
+        color: gray;
+    }
+
+    &__twitter {
+        position: absolute;
+        right: 3em;
+        bottom: 35%;
+        
+    }
+
+    &__facebook {
+        position: absolute;
+        right: 1em;
+        bottom: 35%;
+    }
+}

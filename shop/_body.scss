@@ -26,6 +26,10 @@
     }
 }
 
+.background-image {
+    width: 100%;
+}
+
 .info {
     font-family: values.$font_family;
     text-align: center;
@@ -43,22 +47,150 @@
     }
 }
 
-.market {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    font-family: 'Raleway';
+.groups {
+    display: flex;
+    flex-direction: column;
+    font-family: values.$font_family;
     background-color: values.$thirdary_color;
+    margin-top: 20px;
 
     &__article {
-        position: absolute;
-        background-color: values.$secondary_color;
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+}
+
+.pricing {
+    position: relative;
+    font-family: values.$font_family;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__article {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        text-align: center;
+
+        border-radius: 10px;
+        padding: 30px;
+
+        height: 250px;
+
         margin: 20px;
 
-        img {
-            width: 100%;
-            padding: 30px;
+        &__basic {
+            border: solid 1px #FB3B64;
+        }
+
+        &__professional {
+            border: solid 1px #07ACE6;
+        }
+
+        &__premium {
+            border: solid 1px #55DFB4;
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px;
+        }
+
+        &__features {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            position: absolute;
+            bottom: -1.5em;
+            border-color: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            width: 150px;
+
+            &-basic {
+                background-color: #EB476E;
+            }
+
+            &-professional {
+                background-color: #07ACE6;
+            }
+
+            &-premium {
+                background-color: #55DFB4;
+            }
         }
     }
+}
+
+.questions {
+    position: relative;
+
+    font-family: values.$font_family;
+    margin: 20px;
+
+    &__form {
+        position: relative;
+
+        label {
+            display: block;
+        }
+
+        &__name {
+            text-transform: capitalize;
+            color: #07ACE6;
+        }
+
+        &__container {
+            position: relative;
+            height: 100px;
+
+            &__submit {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+    
+                border-color: transparent;
+                border-radius: 40px;
+                width: 200px;
+                padding: 20px;
+                background-color: #07ACE6;
+                box-shadow: 5px 10px 5px #07ACE64A;
+                color: white;
+            }
+        }
+    }
+
+    &__email {
+        p {
+            display: inline-block;
+        }
+    }
+
+    &__phone {
+        p {
+            display: inline-block;
+        }
+    }
+}
+
+.full-input {
+    width: 100%;
+
+    border-color: transparent;
+    border-bottom: solid 1px gray;
 }
