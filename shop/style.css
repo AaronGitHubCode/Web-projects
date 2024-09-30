@@ -17,6 +17,12 @@
   color: #08A6E4;
   padding: 10px;
 }
+.header__nav {
+  font-family: "Raleway";
+  letter-spacing: 2px;
+  display: none;
+  top: 35%;
+}
 .header__burger {
   position: absolute;
   display: inline-block;
@@ -24,6 +30,28 @@
   right: 1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    position: relative;
+  }
+  .header__nav {
+    position: absolute;
+    right: 0;
+    display: inline;
+  }
+  .header__nav li {
+    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .header__nav li:hover {
+    border-bottom: solid 4px #07ACE6;
+    padding-bottom: 1em;
+  }
+  .header__burger {
+    display: none;
+  }
+}
 .footer {
   position: relative;
   display: block;
@@ -93,6 +121,7 @@
 .groups {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: "Raleway";
   background-color: #F7F7F7;
   margin-top: 20px;
@@ -101,8 +130,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: white;
+  text-align: left;
+  width: 80%;
   border-radius: 10px;
   margin: 10px;
   margin-top: 20px;
@@ -170,6 +200,15 @@
   font-family: "Raleway";
   margin: 20px;
 }
+.questions h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+.questions h2 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
 .questions__form {
   position: relative;
 }
@@ -177,8 +216,21 @@
   display: block;
 }
 .questions__form__name {
+  letter-spacing: 2px;
   text-transform: capitalize;
   color: #07ACE6;
+}
+.questions__form__email {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #07ACE6;
+}
+.questions__form__checkbox {
+  display: flex;
+  align-items: flex-start;
+}
+.questions__form__checkbox label {
+  margin-left: 10px;
 }
 .questions__form__container {
   position: relative;
@@ -188,6 +240,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  margin-bottom: 10px;
   border-color: transparent;
   border-radius: 40px;
   width: 200px;
@@ -196,11 +249,22 @@
   box-shadow: 5px 10px 5px rgba(7, 172, 230, 0.2901960784);
   color: white;
 }
+.questions__email {
+  display: flex;
+  align-items: center;
+}
 .questions__email p {
   display: inline-block;
+  margin-left: 10px;
+}
+.questions__phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
 }
 .questions__phone p {
   display: inline-block;
+  margin-left: 10px;
 }
 
 .full-input {
@@ -209,10 +273,23 @@
   border-bottom: solid 1px gray;
 }
 
+@media only screen and (min-width: 1000px) {
+  .info br {
+    display: none;
+  }
+  .info__article {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pricing {
+    flex-direction: row;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: default;
 }
 
 body {
