@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.header {
+  position: sticky;
+  top: 0;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+}
+.header__brand {
+  display: inline-block;
+  font-family: "Raleway";
+  font-weight: normal;
+  color: #08A6E4;
+  padding: 10px;
+}
+.header__burger {
+  position: absolute;
+  display: inline-block;
+  top: 45%;
+  right: 1em;
+}
+
+.sell {
+  font-family: "Raleway";
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.sell * {
+  margin: 20px;
+}
+.sell button {
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  font-size: larger;
+  font-weight: bolder;
+  border-color: transparent;
+  border-radius: 40px;
+  box-shadow: 5px 10px 5px rgba(7, 172, 230, 0.2901960784);
+  padding: 20px;
+  background-color: #08A6E4;
+  color: white;
+}
+
+.info {
+  font-family: "Raleway";
+  text-align: center;
+}
+.info__article__first, .info__article__second, .info__article__third {
+  margin-top: 30px;
+}
+.info__article__third {
+  margin-bottom: 30px;
+}
+
+.market {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  font-family: "Raleway";
+  background-color: #F7F7F7;
+}
+.market__article {
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  margin: 20px;
+}
+.market__article img {
+  width: 100%;
+  padding: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=style.css.map */

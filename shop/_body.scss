@@ -1,0 +1,64 @@
+@use '_values.scss' as values;
+
+.sell {
+    font-family: values.$font_family;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    * {
+        margin: 20px;
+    }
+
+    button {
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+        font-size: larger;
+        font-weight: bolder;
+        border-color: transparent;
+        border-radius: 40px;
+        box-shadow: 5px 10px 5px #07ACE64A;
+        padding: 20px;
+        background-color: values.$primary_color;
+        color: values.$secondary_color;
+    }
+}
+
+.info {
+    font-family: values.$font_family;
+    text-align: center;
+
+    &__article {
+        @each $container in '&__first, &__second, &__third' {
+            #{$container} {
+                margin-top: 30px;
+            }
+        }
+
+        &__third {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.market {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    font-family: 'Raleway';
+    background-color: values.$thirdary_color;
+
+    &__article {
+        position: absolute;
+        background-color: values.$secondary_color;
+        width: 90%;
+        margin: 20px;
+
+        img {
+            width: 100%;
+            padding: 30px;
+        }
+    }
+}
