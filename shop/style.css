@@ -154,6 +154,9 @@
   background-color: white;
   padding: 20px;
 }
+.groups__article__third img {
+  width: 20px;
+}
 .groups__article hr {
   display: none;
   border-color: transparent;
@@ -203,10 +206,28 @@
 .pricing__article__price__basic h3 {
   margin-bottom: 10px;
 }
-.pricing__article__price__basic p {
+.pricing__article__price__basic h4 {
   font-weight: normal;
   font-size: 40px;
   color: #EB476E;
+  margin-bottom: 10px;
+}
+.pricing__article__price__professional h3 {
+  margin-bottom: 10px;
+}
+.pricing__article__price__professional h4 {
+  font-weight: normal;
+  font-size: 40px;
+  color: #07ACE6;
+  margin-bottom: 10px;
+}
+.pricing__article__price__premium h3 {
+  margin-bottom: 10px;
+}
+.pricing__article__price__premium h4 {
+  font-weight: normal;
+  font-size: 40px;
+  color: #55DFB4;
   margin-bottom: 10px;
 }
 .pricing__article__features {
@@ -253,6 +274,17 @@
   font-family: "Raleway";
   margin: 20px;
 }
+.questions__container {
+  margin-bottom: 50px;
+}
+.questions__container__email {
+  display: flex;
+  align-items: center;
+}
+.questions__container__phone {
+  display: flex;
+  align-items: center;
+}
 .questions h1 {
   font-size: 3em;
   font-weight: normal;
@@ -267,6 +299,10 @@
 }
 .questions__form label {
   display: block;
+  margin-bottom: 30px;
+}
+.questions__form input {
+  margin-bottom: 60px;
 }
 .questions__form__name {
   color: #07ACE6;
@@ -276,7 +312,7 @@
   color: #07ACE6;
   letter-spacing: 6px;
 }
-.questions__form__container__name {
+.questions__form__container__phone {
   letter-spacing: 2px;
   text-transform: capitalize;
   color: #07ACE6;
@@ -350,6 +386,7 @@
     padding: 10em;
   }
   .pricing__article {
+    height: 400px;
     background-color: white;
     flex-direction: column;
     width: 400px;
@@ -371,6 +408,12 @@
   }
   .pricing__article__professional:hover > button {
     box-shadow: 5px 5px 10px #adc2ca;
+  }
+  .pricing__article__premium:hover {
+    box-shadow: 5px 5px 10px #55DFB4;
+  }
+  .pricing__article__premium:hover > button {
+    box-shadow: 5px 5px 10px #55DFB4;
   }
   .groups {
     display: grid;
@@ -397,6 +440,7 @@
   .groups__article__first__div {
     padding: 60px;
     height: inherit;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -407,6 +451,7 @@
   .groups__article__second__div {
     padding: 60px;
     height: inherit;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -436,7 +481,7 @@
     margin: auto;
     width: 60%;
     display: grid;
-    height: 400px;
+    height: 500px;
     grid-template-columns: repeat(2, 400px);
     -moz-column-gap: 100px;
          column-gap: 100px;
@@ -454,6 +499,12 @@
     display: flex;
     flex-direction: column;
     width: 400px;
+  }
+  .questions__form__email input {
+    background-color: red;
+  }
+  .questions__form label {
+    font-size: small;
   }
   .questions__container {
     display: flex;

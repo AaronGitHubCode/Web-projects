@@ -86,6 +86,10 @@
                 background-color: white;
                 padding: 20px;
             }
+
+            img {
+                width: 20px;
+            }
         }
 
         hr {
@@ -149,10 +153,36 @@
                     margin-bottom: 10px;
                 }
 
-                p {
+                h4 {
                     font-weight: normal;
                     font-size: 40px;
                     color: #EB476E;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__professional {
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 40px;
+                    color: #07ACE6;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__premium {
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 40px;
+                    color: #55DFB4;
                     margin-bottom: 10px;
                 }
             }
@@ -213,6 +243,19 @@
     font-family: values.$font_family;
     margin: 20px;
 
+    &__container {
+        margin-bottom: 50px;
+
+        &__email {
+            display: flex;
+            align-items: center;
+        }
+        &__phone {
+            display: flex;
+            align-items: center;
+        }
+    }
+
     h1 {
         font-size: 3em;
         font-weight: normal;
@@ -230,6 +273,11 @@
 
         label {
             display: block;
+            margin-bottom: 30px;
+        }
+
+        input {
+            margin-bottom: 60px;
         }
 
         &__name {
@@ -243,7 +291,7 @@
         }
 
         &__container {
-            &__name {
+            &__phone {
                 letter-spacing: 2px;
                 text-transform: capitalize;
                 color: #07ACE6;
@@ -336,9 +384,11 @@
 
     .pricing {
         flex-direction: row;
+
         padding: 10em;
 
         &__article {
+            height: 400px;
             background-color: white;
             flex-direction: column;
             width: 400px;
@@ -367,6 +417,16 @@
 
                 &:hover>button {
                     box-shadow: 5px 5px 10px #adc2ca;
+                }
+            }
+
+            &__premium {
+                &:hover {
+                    box-shadow: 5px 5px 10px #55DFB4;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #55DFB4;
                 }
             }
         }
@@ -399,6 +459,7 @@
                 &__div {
                     padding: 60px;
                     height: inherit;
+                    width: 50%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -413,10 +474,10 @@
                 &__div {
                     padding: 60px;
                     height: inherit;
+                    width: 50%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    
                 }
 
                 hr {
@@ -454,7 +515,7 @@
         margin: auto;
         width: 60%;
         display: grid;
-        height: 400px;
+        height: 500px;
         grid-template-columns: repeat(2, 400px);
         column-gap: 100px;
 
@@ -470,6 +531,16 @@
             display: flex;
             flex-direction: column;
             width: 400px;
+
+            &__email {
+                input {
+                    background-color: red;
+                }
+            }
+
+            label {
+                font-size: small;
+            }
         }
 
         &__container {
