@@ -34,7 +34,8 @@
 
 @media only screen and (min-width: 1000px) {
     .header {
-        position: relative;
+        position: sticky;
+        top: 0;
 
         &__nav {
             position: absolute;

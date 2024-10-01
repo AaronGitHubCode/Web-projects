@@ -32,7 +32,8 @@
 
 @media only screen and (min-width: 1000px) {
   .header {
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .header__nav {
     position: absolute;
@@ -176,7 +177,6 @@
   text-align: center;
   border-radius: 10px;
   padding: 30px;
-  height: 250px;
   margin: 20px;
 }
 .pricing__article__basic {
@@ -194,9 +194,32 @@
   background-color: white;
   padding: 20px;
 }
+.pricing__article__price__basic h3 {
+  margin-bottom: 10px;
+}
+.pricing__article__price__basic p {
+  font-weight: normal;
+  font-size: 40px;
+  color: #EB476E;
+  margin-bottom: 10px;
+}
 .pricing__article__features {
   display: flex;
   flex-direction: column;
+}
+.pricing__article__features__storage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing__article__features__storage img {
+  margin-right: 10px;
+}
+.pricing__article__features p {
+  display: inline-block;
+}
+.pricing__article__features * {
+  margin-bottom: 10px;
 }
 .pricing__article .button {
   position: absolute;
@@ -237,12 +260,12 @@
 .questions__form label {
   display: block;
 }
-.questions__form__name {
+.questions__form__container__name {
   letter-spacing: 2px;
   text-transform: capitalize;
   color: #07ACE6;
 }
-.questions__form__email {
+.questions__form__container__email {
   letter-spacing: 2px;
   text-transform: capitalize;
   color: #07ACE6;
@@ -309,7 +332,28 @@
   .pricing {
     flex-direction: row;
   }
+  .pricing__article {
+    flex-direction: column;
+    padding: 5em;
+  }
+  .pricing__article__basic:hover {
+    box-shadow: 5px 5px 10px #e3b6bf;
+  }
+  .pricing__article__basic:hover > button {
+    box-shadow: 5px 5px 10px #e3b6bf;
+  }
+  .pricing__article__professional:hover {
+    box-shadow: 5px 5px 10px #adc2ca;
+  }
+  .pricing__article__professional:hover > button {
+    box-shadow: 5px 5px 10px #adc2ca;
+  }
   .groups {
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    place-content: center;
+    place-items: center;
+    row-gap: 100px;
     padding: 80px;
   }
   .groups__article {
@@ -335,8 +379,16 @@
     background-color: #55DFB4;
   }
   .groups__article__trumpet {
-    flex-direction: row;
-    width: 82%;
+    display: grid;
+    grid-template-columns: 300px 100px;
+  }
+  .questions {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    place-content: center;
+    place-items: center;
   }
 }
 * {
