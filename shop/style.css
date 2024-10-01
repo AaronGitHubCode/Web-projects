@@ -333,8 +333,15 @@
     flex-direction: row;
   }
   .pricing__article {
+    background-color: white;
     flex-direction: column;
     padding: 5em;
+  }
+  .pricing__article:hover {
+    transform: scale(1.05);
+    transition-property: box-shadow, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
   }
   .pricing__article__basic:hover {
     box-shadow: 5px 5px 10px #e3b6bf;
