@@ -115,10 +115,13 @@
         align-items: center;
         justify-content: space-around;
 
-        text-align: center;
+        text-align: left;
+        font-size: small;
 
         border-radius: 10px;
-        padding: 30px;
+        padding: 10px;
+
+        width: 90%;
 
         margin: 20px;
 
@@ -138,6 +141,7 @@
             display: flex;
             flex-direction: column;
             background-color: white;
+            justify-content: space-around;
             padding: 20px;
 
             &__basic {
@@ -157,6 +161,8 @@
         &__features {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
 
             &__storage {
                 display: flex;
@@ -224,6 +230,16 @@
 
         label {
             display: block;
+        }
+
+        &__name {
+            color: #07ACE6;
+            letter-spacing: 6px;
+        }
+
+        &__email {
+            color: #07ACE6;
+            letter-spacing: 6px;
         }
 
         &__container {
@@ -325,7 +341,7 @@
         &__article {
             background-color: white;
             flex-direction: column;
-            padding: 5em;
+            width: 400px;
 
             &:hover {
                 transform: scale(1.05);
@@ -400,6 +416,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    
                 }
 
                 hr {
