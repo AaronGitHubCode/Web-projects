@@ -130,12 +130,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
   background-color: white;
   text-align: left;
   width: 80%;
   border-radius: 10px;
   margin: 10px;
   margin-top: 20px;
+}
+.groups__article__trumpet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.groups__article hr {
+  display: none;
+  border-color: transparent;
+  width: 70%;
+  height: 5px;
+}
+.groups__article img {
+  width: 100%;
+}
+.groups__article h2 {
+  margin-bottom: 2em;
+}
+.groups__article p {
+  margin-bottom: 2em;
 }
 
 .pricing {
@@ -274,6 +296,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .sell button {
+    width: 30%;
+  }
   .info br {
     display: none;
   }
@@ -283,6 +308,35 @@
   }
   .pricing {
     flex-direction: row;
+  }
+  .groups {
+    padding: 80px;
+  }
+  .groups__article {
+    flex-direction: row;
+    height: 20em;
+  }
+  .groups__article hr {
+    display: block;
+  }
+  .groups__article img {
+    height: 18em;
+  }
+  .groups__article__first {
+    flex-direction: row-reverse;
+  }
+  .groups__article__first hr {
+    background-color: #FB3B64;
+  }
+  .groups__article__second hr {
+    background-color: #08A6E4;
+  }
+  .groups__article__third hr {
+    background-color: #55DFB4;
+  }
+  .groups__article__trumpet {
+    flex-direction: row;
+    width: 82%;
   }
 }
 * {

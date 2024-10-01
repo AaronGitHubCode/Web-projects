@@ -59,12 +59,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
         background-color: white;
         text-align: left;
         width: 80%;
         border-radius: 10px;
         margin: 10px;
         margin-top: 20px;
+
+        &__trumpet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        hr {
+            display: none;
+            border-color: transparent;
+            width: 70%;
+            height: 5px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-bottom: 2em;
+        }
     }
 }
 
@@ -237,6 +264,12 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    .sell {
+        button {
+            width: 30%;
+        }
+    }
+    
     .info {
         br {
             display: none;
@@ -250,5 +283,47 @@
 
     .pricing {
         flex-direction: row;
+    }
+
+    .groups {
+        padding: 80px;
+
+        &__article {
+            flex-direction: row;
+            height: 20em;
+
+            hr {
+                display: block;
+            }
+
+            img {
+                height: 18em;
+            }
+
+            &__first {
+                flex-direction: row-reverse;
+
+                hr {
+                    background-color: #FB3B64;
+                }
+            }
+
+            &__second {
+                hr {
+                    background-color: #08A6E4;
+                }
+            }
+
+            &__third {
+                hr {
+                    background-color: #55DFB4;
+                }
+            }
+
+            &__trumpet {
+                flex-direction: row;
+                width: 82%;
+            }
+        }
     }
 }
