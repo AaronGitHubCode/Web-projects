@@ -9,9 +9,6 @@
     box-shadow: -10px 0px 10px gray;
     padding: 20px;
 
-    * {
-        display: inline-block;
-    }
 
     p {
         font-size: 12px;
@@ -23,11 +20,18 @@
         right: 3em;
         bottom: 35%;
         
+        @media only screen and (min-width: 1000px) {
+            right: 10em;
+        }
     }
 
     &__facebook {
         position: absolute;
         right: 1em;
         bottom: 35%;
+    
+        @media only screen and (min-width: 1000px) {
+            right: 8em;
+        }
     }
 }

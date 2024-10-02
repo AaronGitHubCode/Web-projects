@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Oxygen Shop</title>
 </head>
 
@@ -12,62 +12,66 @@
     <header class="header">
         <h1 class="header__brand">OXYGEN Shop</h1>
         <img class="header__burger" src="./resources/burger.svg" alt="">
-
-        <nav class="header__nav">
-            <ul>
-                <li>WHY US</li>
-                <li>BENEFITS</li>
-                <li>PRICES</li>
-                <li>CONTACT</li>
+        <nav class="nav">
+            <ul class="nav__sections">
+                <li class="nav__section">WHY US</li>
+                <li class="nav__section">BENEFITS</li>
+                <li class="nav__section">PRICES</li>
+                <li class="nav__section">CONTACT</li>
             </ul>
         </nav>
     </header>
     <section class="sell">
-        <article>
-            <h2>Sell More!</h2>
-            <h3>Open Shop on our platform and <br> increase your sales</h3>
-            <button>Open your shop</button>
+        <article class="sell__article">
+            <h2 class="sell__title">Sell More!</h2>
+            <h3 class="sell__subtitle">Open Shop on our platform and increase your sales</h3>
+            <button class="sell__button">Open your shop</button>
         </article>
     </section>
     <img class="background-image" src="./resources/background.svg" alt="Background Image Number One">
     <section class="info">
         <h2 class="info__title">The most popular <br> sales platform in <br> country</h2>
         <article class="info__article">
-            <div class="info__article__first">
-                <img src="./resources/person.svg" alt="Person">
-                <h3>100000+</h3>
-                <p>daily entries</p>
+            <div class="info__div">
+                <div class="info__entries">
+                    <img class="circle" src="./resources/red-circle.svg" alt="">
+                    <img class="icon" src="./resources/person.svg" alt="">
+                </div>
+                <h3 class="info__h3">100000+</h3>
+                <p class="info__p">daily entries</p>
             </div>
-            <div class="info__article__second">
-                <img src="./resources/eye.svg" alt="Eye">
-                <h3>2000000+</h3>
-                <p>seen products every day</p>
+            <div class="info__div">
+                <div class="info__entries">
+                    <img class="circle" src="./resources/blue-circle.svg" alt="">
+                    <img class="icon icon-eye" src="./resources/eye.svg" alt="">
+                </div>
+                <h3 class="info__h3">2000000+</h3>
+                <p class="info__p">seen products <br> every day</p>
             </div>
-            <div class="info__article__third">
-                <img src="./resources/posts.svg" alt="Posts">
-                <h3>10000+</h3>
-                <p>added posts daily</p>
+            <div class="info__div info__div-third">
+                <div class="info__entries">
+                    <img class="circle" src="./resources/green.svg" alt="Posts">
+                    <img class="icon icon-posts" src="./resources/posts.svg" alt="">
+                </div>
+                <h3 class="info__h3">10000+</h3>
+                <p class="info__p">added posts <br> daily</p>
             </div>
         </article>
     </section>
     <section class="groups">
-        <article class="groups__article groups__article__first">
+        <article class="groups__article groups__article-first">
             <img src="./resources/laptop.svg" alt="Laptop">
-            <div class="groups__article__first__div">
+            <div>
                 <h2>Be always first</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod soluta nisi vitae, laudantium esse hic
-                    maxime est beatae a laborum deserunt sint corrupti cum dolorem officiis magnam inventore sequi
-                    ipsum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <hr>
             </div>
         </article>
-        <article class="groups__article groups__article__second">
+        <article class="groups__article groups__article-second">
             <img src="./resources/phone.svg" alt="Phone">
             <div class="groups__article__second__div">
                 <h2>Your shop is <br> where you are!</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur fuga quibusdam eligendi
-                    veritatis assumenda expedita inventore cumque, asperiores molestias cupiditate exercitationem ipsum
-                    ad saepe incidunt nam? Quis qui cum repellendus!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <hr>
             </div>
         </article>
@@ -75,9 +79,7 @@
             <article class="groups__article groups__article__third">
                 <div class="groups__article__third__div">
                     <h2>Increase <br> recognition your <br> brand!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nam adipisci sunt fugiat quas
-                        nemo error nisi ullam distinctio hic. Nihil sed iure recusandae laborum repellendus sit minus
-                        vitae hic?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <hr>
                 </div>
                 <img src="./resources/trumpet.svg" alt="Trumpet">
@@ -86,9 +88,9 @@
         </div>
     </section>
     <section class="pricing">
-        <h1 class="pricing__title">Pricin</h1>
+        <h1 class="pricing__title">Pricing</h1>
         <div class="pricing__container">
-            <article class="pricing__article pricing__article__basic">
+            <article class="pricing__article pricing__article-basic">
                 <div class="pricing__article__price pricing__article__price__basic">
                     <h3>Basic</h3>
                     <h4>$0</h4>

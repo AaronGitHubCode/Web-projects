@@ -1,0 +1,173 @@
+@use '_values.scss' as values;
+
+.questions {
+    position: relative;
+
+    font-family: values.$font_family;
+    margin: 20px;
+
+    &__container {
+        margin-bottom: 50px;
+
+        &__email {
+            display: flex;
+            align-items: center;
+        }
+        &__phone {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-size: 1em;
+        font-weight: normal;
+
+        margin-bottom: 2em;
+    }
+
+    &__form {
+        position: relative;
+
+        label {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        input {
+            margin-bottom: 60px;
+        }
+
+        &__name {
+            color: #07ACE6;
+            letter-spacing: 6px;
+        }
+
+        &__email {
+            color: #07ACE6;
+            letter-spacing: 6px;
+        }
+
+        &__container {
+            &__phone {
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                color: #07ACE6;
+            }
+
+            &__email {
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                color: #07ACE6;
+            }
+        }
+
+        &__checkbox {
+            display: flex;
+            align-items: flex-start;
+
+            label {
+                margin-left: 10px;
+            }
+        }
+
+        &__container {
+            position: relative;
+            height: 100px;
+
+            &__submit {
+                font-family: 'Open Sans';
+                position: absolute;
+                right: 0;
+
+                border-color: transparent;
+                border-radius: 40px;
+                width: 200px;
+                padding: 20px;
+                background-color: #07ACE6;
+                box-shadow: 5px 10px 5px #07ACE64A;
+                color: white;
+            }
+        }
+    }
+
+    &__email {
+        display: flex;
+        align-items: center;
+
+        p {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 2em;
+
+        p {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        margin: auto;
+        width: 60%;
+        display: grid;
+        height: 500px;
+        grid-template-columns: repeat(2, 400px);
+        column-gap: 100px;
+
+        &__div {
+            display: flex;
+            height: inherit;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__form {
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+
+            &__email {
+                input {
+                    background-color: red;
+                }
+            }
+
+            label {
+                font-size: small;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+
+            &__email {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__phone {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        place-content: center;
+        place-items: center;
+    }
+}

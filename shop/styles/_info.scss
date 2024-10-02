@@ -1,0 +1,87 @@
+@use '_values.scss' as values;
+
+.circle {
+    position: absolute;
+    left: 50px;
+}
+
+.icon {
+    position: absolute;
+    left: 80px;
+
+    &-eye {
+        top: 15px;
+        left: 70px;
+    }
+
+    &-posts {
+        top: 5px;
+    }
+}
+
+.info {
+    font-family: values.$font_family;
+    text-align: center;
+
+    &__entries {
+        position: relative;
+        height: 63px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 35px;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+
+    &__h3 {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+
+    &__p {
+        color: rgba(165, 165, 165, 1);
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__div {
+        margin: auto;
+        margin-top: 30px;
+        width: 176px;
+
+        &-third {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+        width: 70%;
+        margin: auto;
+
+        br {
+            display: none;
+        }
+
+        &__article {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

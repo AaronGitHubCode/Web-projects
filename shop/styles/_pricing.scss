@@ -1,0 +1,212 @@
+@use '_values.scss' as values;
+
+.pricing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        margin-top: 30px;
+    }
+
+    &__article {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 251px;
+
+        text-align: left;
+        font-size: small;
+
+        border-radius: 18px;
+        padding: 10px;
+
+        width: 90%;
+
+        margin: 20px;
+        margin-bottom: 50px;
+
+        &-basic {
+            border: solid 1px #FB3B64;
+        }
+
+        &__professional {
+            border: solid 1px #07ACE6;
+        }
+
+        &__premium {
+            border: solid 1px #55DFB4;
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+
+            &__basic {
+                h3 {
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 40px;
+                    color: #EB476E;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__professional {
+                h3 {
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 40px;
+                    color: #07ACE6;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-weight: 700;
+                }
+            }
+
+            &__premium {
+                h3 {
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 40px;
+                    color: #55DFB4;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__features {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+
+            &__storage {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                display: inline-block;
+            }
+
+            * {
+                margin-bottom: 10px;
+            }
+        }
+
+        .button {
+            position: absolute;
+            bottom: -1.5em;
+            border-color: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            width: 150px;
+
+            &-basic {
+                background-color: #EB476E;
+            }
+
+            &-professional {
+                background-color: #07ACE6;
+            }
+
+            &-premium {
+                background-color: #55DFB4;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 10em;
+
+        &__title {
+            font-size: 36px;
+            position: absolute;
+            top: 15%;
+            margin-top: 0;
+        }
+
+        &__container {
+            display: flex;
+        }
+
+        &__article {
+            height: 400px;
+            background-color: white;
+            flex-direction: column;
+            width: 350px;
+
+            &:hover {
+                transform: scale(1.05);
+                transition-property: box-shadow, transform;
+                transition-duration: 1s;
+                transition-timing-function: ease;
+            }
+
+            &__basic {
+                &:hover {
+                    box-shadow: 5px 5px 10px #e3b6bf;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #e3b6bf;
+                }
+            }
+
+            &__professional {
+                &:hover {
+                    box-shadow: 5px 5px 10px #adc2ca;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #adc2ca;
+                }
+            }
+
+            &__premium {
+                &:hover {
+                    box-shadow: 5px 5px 10px #55DFB4;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #55DFB4;
+                }
+            }
+        }
+    }
+}

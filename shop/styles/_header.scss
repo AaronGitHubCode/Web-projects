@@ -1,0 +1,78 @@
+@use '_values.scss' as values;
+
+.header {
+    font-family: 'Open Sans';
+    position: relative;
+    border: none;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+
+    &__brand {
+        display: inline-block;
+        font-family: values.$font_family;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        color: values.$primary_color;
+        padding: 20px;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: 100px;
+        }
+    }
+
+    &__burger {
+        position: absolute;
+        display: inline-block;
+        top: 45%;
+        right: 1em;
+
+        @media only screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__burger {
+            display: none;
+        }
+    }
+}
+
+.nav {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+    display: none;
+    top: 40%;
+
+    &__sections {
+        display: inline-block;
+        list-style: none;
+    }
+
+    &__section {    
+        font-family: values.$font_family;
+        letter-spacing: 2px;
+        display: none;
+        top: 35%;
+
+        @media only screen and (min-width: 1000px) {
+            display: inline-block;
+            margin-left: 3em;
+            margin-right: 3em;
+
+            &:hover {
+                border-bottom: solid 4px #07ACE6;
+                padding-bottom: 1.6em;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+        right: 0;
+        display: inline;
+    }
+}

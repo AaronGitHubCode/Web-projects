@@ -1,0 +1,12 @@
+@use '_values.scss' as values;
+
+.background-image {
+    width: 100%;
+}
+
+.full-input {
+    width: 100%;
+
+    border-color: transparent;
+    border-bottom: solid 1px gray;
+}
