@@ -112,8 +112,15 @@
   font-family: "Raleway";
   text-align: center;
 }
+.info__title {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 42px;
+}
 .info__article__first, .info__article__second, .info__article__third {
+  margin: auto;
   margin-top: 30px;
+  width: 176px;
 }
 .info__article__third {
   margin-bottom: 30px;
@@ -146,13 +153,22 @@
   justify-content: center;
   background-color: white;
 }
+.groups__article__first * {
+  margin: 10px;
+}
 .groups__article__second {
   background-color: white;
+}
+.groups__article__second * {
+  margin: 10px;
 }
 .groups__article__third__div {
   border-radius: 5px;
   background-color: white;
   padding: 20px;
+}
+.groups__article__third__div * {
+  margin: 10px;
 }
 .groups__article__third img {
   width: 20px;
@@ -166,6 +182,9 @@
 .groups__article img {
   width: 60%;
 }
+.groups__article__trumpet img {
+  width: 100%;
+}
 
 .pricing {
   position: relative;
@@ -174,6 +193,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.pricing__title {
+  margin-top: 30px;
 }
 .pricing__article {
   position: relative;
@@ -186,6 +208,7 @@
   padding: 10px;
   width: 90%;
   margin: 20px;
+  margin-bottom: 50px;
 }
 .pricing__article__basic {
   border: solid 1px #FB3B64;
@@ -200,10 +223,12 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  align-items: center;
   justify-content: space-around;
   padding: 20px;
 }
 .pricing__article__price__basic h3 {
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .pricing__article__price__basic h4 {
@@ -213,6 +238,7 @@
   margin-bottom: 10px;
 }
 .pricing__article__price__professional h3 {
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .pricing__article__price__professional h4 {
@@ -221,7 +247,11 @@
   color: #07ACE6;
   margin-bottom: 10px;
 }
+.pricing__article__price__professional p {
+  font-weight: 700;
+}
 .pricing__article__price__premium h3 {
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .pricing__article__price__premium h4 {
@@ -229,6 +259,9 @@
   font-size: 40px;
   color: #55DFB4;
   margin-bottom: 10px;
+}
+.pricing__article__price__premium p {
+  font-weight: 700;
 }
 .pricing__article__features {
   display: flex;
@@ -374,6 +407,12 @@
   .sell button {
     width: 30%;
   }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+  }
   .info br {
     display: none;
   }
@@ -382,14 +421,25 @@
     justify-content: space-around;
   }
   .pricing {
-    flex-direction: row;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     padding: 10em;
+  }
+  .pricing__title {
+    font-size: 36px;
+    position: absolute;
+    top: 15%;
+    margin-top: 0;
+  }
+  .pricing__container {
+    display: flex;
   }
   .pricing__article {
     height: 400px;
     background-color: white;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
   }
   .pricing__article:hover {
     transform: scale(1.05);
@@ -438,7 +488,6 @@
     flex-direction: row-reverse;
   }
   .groups__article__first__div {
-    padding: 60px;
     height: inherit;
     width: 50%;
     display: flex;
@@ -449,7 +498,6 @@
     background-color: #FB3B64;
   }
   .groups__article__second__div {
-    padding: 60px;
     height: inherit;
     width: 50%;
     display: flex;
@@ -526,6 +574,8 @@
   padding: 0;
   margin: 0;
   cursor: default;
+  font-family: "Raleway";
+  font-weight: 400;
 }
 
 body {
