@@ -4,41 +4,70 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: values.$font_family;
     background-color: values.$thirdary_color;
     height: inherit;
     margin-top: 20px;
 
+    &__content {
+        background-color: white;
+    }
+
     &__title {
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
+        margin-bottom: 50px !important;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 0px !important;
+        }
     }
 
     &__entries {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;        
-        width: inherit;
-        height: 150px;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
 
         &__rombo {
             position: absolute;
-            top: -10px;
-            right: 0;
-            height: 90px;
+            
+            &-first {
+                top: -25px;
+                right: -5px;
+                height: 70%;
+            }
 
             &-second {
+                top: 0;
+                height: 80% !important;
+            }
 
-                height: 100%;              
+            &-third {
+                @media only screen and (min-width: 1000px) {
+                    margin-top: 80px;
+                    width: inherit !important;
+                }
             }
         }
 
         &__icon {
             position: absolute;
-            height: 110px;
+            
+            &-first {
+                height: 110px;
+            }
+
+            &-second {
+                @media only screen and (min-width: 1000px) {
+                    top: 70px !important;
+                    left: 50px;
+                }
+            }
         }
     }
 
@@ -80,20 +109,10 @@
             }
         }
 
-        &__third {
-            &__div {
-                border-radius: 5px;
-                background-color: white;
-                padding: 20px;
-
-                * {
-                    margin: 10px;
-                }
-            }
-
-            img {
-                width: 20px;
-            }
+        &-third {
+            width: 100%;
+            justify-content: space-between;
+            border-color: transparent;
         }
 
         hr {
@@ -125,26 +144,25 @@
 
         &__entries {
             height: inherit;
+            width: inherit;
 
             &__rombo {
-                height: 80%;
-                top: -25px;
-                right: 0;
+                height: 50%;
+                top: 0;
+                right: -50px;
 
                 &-second {
                     left: 0;
-                    height: inherit;
+                    height: 100%;
                 }
             }
 
             &__icon {
-                transform: scaleY(1.2);
+                transform: scale(2);
 
                 &-second {
+                    transform: scale(1.5);
                     top: 60px;
-                    left: 0;
-                    width: 90% !important;
-                    height: 70%;
                 }
             }
         }
@@ -185,7 +203,6 @@
 
             &__trumpet {
                 display: flex;
-                align-items: center;
                 justify-content: space-around;
 
                 hr {

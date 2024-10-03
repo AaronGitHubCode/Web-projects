@@ -131,37 +131,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "Raleway";
   background-color: #F7F7F7;
   height: inherit;
   margin-top: 20px;
 }
+.groups__content {
+  background-color: white;
+}
 .groups__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
+  margin-bottom: 50px !important;
+}
+@media only screen and (min-width: 1000px) {
+  .groups__title {
+    margin-bottom: 0px !important;
+  }
 }
 .groups__entries {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: inherit;
-  height: 150px;
+  width: 300px;
+  height: 100px;
 }
 .groups__entries__rombo {
   position: absolute;
-  top: -10px;
-  right: 0;
-  height: 90px;
+}
+.groups__entries__rombo-first {
+  top: -25px;
+  right: -5px;
+  height: 70%;
 }
 .groups__entries__rombo-second {
-  height: 100%;
+  top: 0;
+  height: 80% !important;
+}
+@media only screen and (min-width: 1000px) {
+  .groups__entries__rombo-third {
+    margin-top: 80px;
+    width: inherit !important;
+  }
 }
 .groups__entries__icon {
   position: absolute;
+}
+.groups__entries__icon-first {
   height: 110px;
+}
+@media only screen and (min-width: 1000px) {
+  .groups__entries__icon-second {
+    top: 70px !important;
+    left: 50px;
+  }
 }
 .groups__article {
   margin-top: 20px;
@@ -196,16 +222,10 @@
 .groups__article-second * {
   margin: 10px;
 }
-.groups__article__third__div {
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px;
-}
-.groups__article__third__div * {
-  margin: 10px;
-}
-.groups__article__third img {
-  width: 20px;
+.groups__article-third {
+  width: 100%;
+  justify-content: space-between;
+  border-color: transparent;
 }
 .groups__article hr {
   display: none;
@@ -231,24 +251,23 @@
   }
   .groups__entries {
     height: inherit;
+    width: inherit;
   }
   .groups__entries__rombo {
-    height: 80%;
-    top: -25px;
-    right: 0;
+    height: 50%;
+    top: 0;
+    right: -50px;
   }
   .groups__entries__rombo-second {
     left: 0;
-    height: inherit;
+    height: 100%;
   }
   .groups__entries__icon {
-    transform: scaleY(1.2);
+    transform: scale(2);
   }
   .groups__entries__icon-second {
+    transform: scale(1.5);
     top: 60px;
-    left: 0;
-    width: 90% !important;
-    height: 70%;
   }
   .groups__content {
     height: 80%;
@@ -278,7 +297,6 @@
   }
   .groups__article__trumpet {
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
   .groups__article__trumpet hr {
@@ -438,7 +456,7 @@
   justify-content: center;
 }
 .pricing__title {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .pricing__article {
   position: relative;
