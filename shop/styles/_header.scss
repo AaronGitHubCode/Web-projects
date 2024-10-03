@@ -53,7 +53,8 @@
     }
 
     &__section {    
-        font-family: values.$font_family;
+        font-family: 'Open Sans';
+        color: #A5A5A5;
         letter-spacing: 2px;
         display: none;
         top: 35%;
@@ -64,8 +65,9 @@
             margin-right: 3em;
 
             &:hover {
+                color: black;
                 border-bottom: solid 4px #07ACE6;
-                padding-bottom: 1.6em;
+                padding-bottom: 2.3em;
             }
         }
     }

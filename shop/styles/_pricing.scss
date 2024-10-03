@@ -178,6 +178,13 @@
                 transition-timing-function: ease;
             }
 
+            &:not(hover) {
+                transform: scale(1);
+                transition-property: box-shadow, transform;
+                transition-duration: 1s;
+                transition-timing-function: ease;
+            }
+
             &__basic {
                 &:hover {
                     box-shadow: 5px 5px 10px #e3b6bf;
