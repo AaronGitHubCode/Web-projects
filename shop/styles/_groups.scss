@@ -8,6 +8,22 @@
     background-color: values.$thirdary_color;
     margin-top: 20px;
 
+    &__entries {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 50%;
+
+        &__rombo {
+            position: absolute;
+        }
+
+        &__icon {
+            position: absolute;
+        }
+    }
 
     &__article {
         margin-top: 20px;

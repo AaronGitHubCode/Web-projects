@@ -133,6 +133,20 @@
   background-color: #F7F7F7;
   margin-top: 20px;
 }
+.groups__entries {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 50%;
+}
+.groups__entries__rombo {
+  position: absolute;
+}
+.groups__entries__icon {
+  position: absolute;
+}
 .groups__article {
   margin-top: 20px;
   display: flex;
