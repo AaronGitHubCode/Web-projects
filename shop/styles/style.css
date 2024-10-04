@@ -516,10 +516,10 @@
   align-items: center;
   justify-content: center;
 }
-.pricing__article__features__storage img {
+.pricing__article__features__storage__image {
   margin-right: 10px;
 }
-.pricing__article__features p {
+.pricing__article__features__storage__description {
   display: inline-block;
 }
 .pricing__article__features * {
