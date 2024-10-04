@@ -1,4 +1,49 @@
-@use '_values.scss' as values;
+.button {
+    position: absolute;
+    bottom: -1.5em;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 150px;
+
+    &--basic {
+        background-color: #EB476E;
+    }
+
+    &--professional {
+        background-color: #07ACE6;
+    }
+
+    &--premium {
+        background-color: #55DFB4;
+    }
+}
+
+.price {
+    &__name {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    &__cost {
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: 10px;
+        
+        &--basic {
+            color: #EB476E;
+        }
+
+        &--professional {
+            color: #07ACE6;
+        }
+
+        &--premium {
+            color: #55DFB4;
+        }
+    }
+}
 
 .pricing {
     position: relative;
@@ -6,19 +51,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
 
     &__title {
         margin-top: 60px;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 36px;
+            position: absolute;
+            top: 5rem;
+            margin-top: 0;
+        }
     }
 
     &__article {
-        width: 280px !important;
+        width: 18rem !important;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 251px;
-
         text-align: left;
         font-size: small;
 
@@ -28,16 +79,46 @@
         margin: 20px;
         margin-bottom: 50px;
 
-        &-basic {
+        &--basic {
             border: solid 1px #FB3B64;
+
+            @media only screen and (min-width: 1000px) {
+                &:hover {
+                    box-shadow: 5px 5px 10px #e3b6bf;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #e3b6bf;
+                }
+            }
         }
 
-        &__professional {
+        &--professional {
             border: solid 1px #07ACE6;
+
+            @media only screen and (min-width: 1000px) {
+                &:hover {
+                    box-shadow: 5px 5px 10px #adc2ca;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #adc2ca;
+                }
+            }
         }
 
-        &__premium {
+        &--premium {
             border: solid 1px #55DFB4;
+
+            @media only screen and (min-width: 1000px) {
+                &:hover {
+                    box-shadow: 5px 5px 10px #55DFB4;
+                }
+
+                &:hover>button {
+                    box-shadow: 5px 5px 10px #55DFB4;
+                }
+            }
         }
 
         &__price {
@@ -48,30 +129,11 @@
             justify-content: space-around;
             padding: 20px;
 
-            &__basic {
-                h3 {
-                    font-weight: 700;
-                    margin-bottom: 10px;
-                }
-
+            &--professional {
                 h4 {
                     font-weight: normal;
                     font-size: 40px;
-                    color: #EB476E;
-                    margin-bottom: 10px;
-                }
-            }
-
-            &__professional {
-                h3 {
-                    font-weight: 700;
-                    margin-bottom: 10px;
-                }
-
-                h4 {
-                    font-weight: normal;
-                    font-size: 40px;
-                    color: #07ACE6;
+                    
                     margin-bottom: 10px;
                 }
 
@@ -80,7 +142,7 @@
                 }
             }
 
-            &__premium {
+            &--premium {
                 h3 {
                     font-weight: 700;
                     margin-bottom: 10px;
@@ -89,7 +151,7 @@
                 h4 {
                     font-weight: normal;
                     font-size: 40px;
-                    color: #55DFB4;
+                    
                     margin-bottom: 10px;
                 }
 
@@ -124,54 +186,14 @@
             }
         }
 
-        .button {
-            position: absolute;
-            bottom: -1.5em;
-            border-color: transparent;
-            border-radius: 20px;
-            padding: 10px;
-            color: white;
-            width: 150px;
-
-            &-basic {
-                background-color: #EB476E;
-            }
-
-            &-professional {
-                background-color: #07ACE6;
-            }
-
-            &-premium {
-                background-color: #55DFB4;
-            }
-        }
-    }
-
-    @media only screen and (min-width: 1000px) {
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        padding: 10em;
-
-        &__title {
-            font-size: 36px;
-            position: absolute;
-            top: 15%;
-            margin-top: 0;
-        }
-
-        &__container {
-            display: flex;
-        }
-
-        &__article {
+        @media only screen and (min-width: 1000px) {
             height: 400px;
             background-color: white;
             flex-direction: column;
             width: 350px;
 
             &:hover {
-                transform: scale(1.05);
+                transform: scale(1.1);
                 transition-property: box-shadow, transform;
                 transition-duration: 1s;
                 transition-timing-function: ease;
@@ -183,36 +205,19 @@
                 transition-duration: 1s;
                 transition-timing-function: ease;
             }
-
-            &__basic {
-                &:hover {
-                    box-shadow: 5px 5px 10px #e3b6bf;
-                }
-
-                &:hover>button {
-                    box-shadow: 5px 5px 10px #e3b6bf;
-                }
-            }
-
-            &__professional {
-                &:hover {
-                    box-shadow: 5px 5px 10px #adc2ca;
-                }
-
-                &:hover>button {
-                    box-shadow: 5px 5px 10px #adc2ca;
-                }
-            }
-
-            &__premium {
-                &:hover {
-                    box-shadow: 5px 5px 10px #55DFB4;
-                }
-
-                &:hover>button {
-                    box-shadow: 5px 5px 10px #55DFB4;
-                }
-            }
         }
+    }
+
+    &__container {
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 10em;
     }
 }

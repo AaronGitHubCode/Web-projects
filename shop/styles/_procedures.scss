@@ -1,0 +1,11 @@
+@mixin button-base($background-color, $box-shadow-color) {
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    border-color: transparent;
+    font-family: 'Open Sans';
+    font-size: larger;
+    font-weight: bolder;
+    background-color: $background_color;
+    box-shadow: 5px 5px 5px $box-shadow-color;
+}

@@ -1,9 +1,9 @@
-@use '_values.scss' as values;
+@use '_procedures.scss' as values;
 
 .questions {
     position: relative;
 
-    font-family: values.$font_family;
+    font-family: 'Open Sans';
     margin: 20px;
 
     &__container {
@@ -84,14 +84,8 @@
                 font-family: 'Open Sans';
                 position: absolute;
                 right: 0;
-
-                border-color: transparent;
-                border-radius: 40px;
                 width: 200px;
-                padding: 20px;
-                background-color: #07ACE6;
-                box-shadow: 5px 10px 5px #07ACE64A;
-                color: white;
+                @include button-base(#07ACE6, #07ACE64A);
             }
         }
     }

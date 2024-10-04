@@ -61,8 +61,8 @@
     <section class="groups">
         <div class="content content-first">
             <div class="content__image">
-                <img class="content__image-circle" src="./resources/red-circle.svg" alt="">
-                <img class="content__image-icon" src="./resources/laptop.svg" alt="">
+                <img class="content__image__circle content__image__circle--red" src="./resources/red-circle.svg" alt="">
+                <img class="content__image__icon content__image__icon--laptop" src="./resources/laptop.svg" alt="">
             </div>
             <div class="content__text">
                 <h1 class="content__text__title">Be always first</h1>
@@ -96,10 +96,10 @@
     <section class="pricing">
         <h1 class="pricing__title">Pricing</h1>
         <div class="pricing__container">
-            <article class="pricing__article pricing__article-basic">
-                <div class="pricing__article__price pricing__article__price__basic">
-                    <h3>Basic</h3>
-                    <h4>$0</h4>
+            <article class="pricing__article pricing__article--basic">
+                <div class="pricing__article__price pricing__article__price--basic">
+                    <h3 class="price__name price__name--basic">Basic</h3>
+                    <h4 class="price__cost price__cost--basic">$0</h4>
                 </div>
                 <div class="pricing__article__features">
                     <div class="pricing__article__features__storage">
@@ -123,13 +123,13 @@
                         <p>Full support</p>
                     </div>
                 </div>
-                <button class="button button-basic">Begin</button>
+                <button class="button button--basic">Begin</button>
             </article>
-            <article class="pricing__article pricing__article__professional">
-                <div class="pricing__article__price pricing__article__price__professional">
-                    <h3>Professional</h3>
-                    <h4>$25</h4>
-                    <p>Limited offer</p>
+            <article class="pricing__article pricing__article--professional">
+                <div class="pricing__article__price pricing__article__price--professional">
+                    <h3 class="price__name price__name--professional">Professional</h3>
+                    <h4 class="price__cost price__cost--professional">$25</h4>
+                    <p class="price__description price__description--professional">Limited offer</p>
                 </div>
                 <div class="pricing__article__features">
                     <div class="pricing__article__features__storage">
@@ -153,13 +153,13 @@
                         <p>Full support</p>
                     </div>
                 </div>
-                <button class="button button-professional">Begin</button>
+                <button class="button button--professional">Begin</button>
             </article>
-            <article class="pricing__article pricing__article__premium">
-                <div class="pricing__article__price pricing__article__price__premium">
-                    <h3>Premium</h3>
-                    <h4>$60</h4>
-                    <p>Limited offer</p>
+            <article class="pricing__article pricing__article--premium">
+                <div class="pricing__article__price pricing__article__price--premium">
+                    <h3 class="price__name price__name--premium">Premium</h3>
+                    <h4 class="price__cost price__cost--premium">$60</h4>
+                    <p class="price__description price__description--premium">Limited offer</p>
                 </div>
                 <div class="pricing__article__features">
                     <div class="pricing__article__features__storage">
@@ -183,7 +183,7 @@
                         <p>Full support</p>
                     </div>
                 </div>
-                <button class="button button-premium">Begin</button>
+                <button class="button button--premium">Begin</button>
             </article>
         </div>
     </section>
@@ -227,7 +227,7 @@
     </section>
     <footer class="footer">
         <h2>OXYGEN Shop</h2>
-        <p>©️ 2022 OXYGEN, All Rights Reserved</p>
+        <p class="footer__copyright">©️ 2022 OXYGEN, All Rights Reserved</p>
         <img class="footer__twitter" src="./resources/twitter.svg" alt="Twitter Logo">
         <img class="footer__facebook" src="./resources/facebook.svg" alt="Facebook Logo">
     </footer>

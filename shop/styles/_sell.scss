@@ -1,7 +1,7 @@
-@use '_values.scss' as values;
+@use '_procedures.scss' as values;
 
 .sell {
-    font-family: values.$font_family;
+    font-family: 'Raleway';
     font-weight: lighter;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -29,7 +29,7 @@
     &__button {
         margin-top: 20px;
         width: 100%;
-        @include button-base(values.$primary_color, #07ACE64A);
+        @include button-base(#08A6E4, #07ACE64A);
     }
 
     @media only screen and (min-width: 1000px) {
