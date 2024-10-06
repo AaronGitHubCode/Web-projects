@@ -8,7 +8,7 @@ $third_separator_color: rgba(85, 223, 180, 1);
     align-items: center;
     background-color: rgba(247, 247, 247, 1);
     height: inherit;
-    padding: 20px;
+    padding: 80px;
 }
 
 .trumpet__container {
@@ -16,7 +16,7 @@ $third_separator_color: rgba(85, 223, 180, 1);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 10px;
 
     &__div {
         display: flex;

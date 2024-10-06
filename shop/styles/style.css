@@ -112,7 +112,7 @@
   align-items: center;
   background-color: rgb(247, 247, 247);
   height: inherit;
-  padding: 20px;
+  padding: 80px;
 }
 
 .trumpet__container {
@@ -120,6 +120,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 .trumpet__container__div {
   display: flex;
