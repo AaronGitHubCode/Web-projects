@@ -770,6 +770,21 @@
 .questions__form__checkbox label {
   margin-left: 10px;
 }
+.questions__form__checkbox > input {
+  width: 6rem;
+  height: 1rem;
+  border: solid 1px #95989A;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 4px;
+}
+.questions__form__checkbox > input:checked {
+  background-image: url("../resources/check.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
 .questions__form__container {
   position: relative;
   height: 100px;
