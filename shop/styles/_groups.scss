@@ -67,6 +67,10 @@ $third_separator_color: rgba(85, 223, 180, 1);
         border: solid 1px rgba(247, 247, 247, 1);
 
         background-color: $third_separator_color;
+
+        @media only screen and (min-width: 1000px) {
+            width: 70%;
+        }
     }
 
     @media only screen and (min-width: 1000px) {

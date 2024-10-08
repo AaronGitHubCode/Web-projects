@@ -172,6 +172,11 @@
   background-color: rgb(85, 223, 180);
 }
 @media only screen and (min-width: 1000px) {
+  .trumpet__container__image {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1000px) {
   .trumpet__container {
     flex-direction: row;
     height: 350px;
