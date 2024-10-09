@@ -112,7 +112,12 @@
   align-items: center;
   background-color: rgb(247, 247, 247);
   height: inherit;
-  padding: 80px;
+  padding: 40px;
+}
+@media only screen and (min-width: 1000px) {
+  .groups {
+    padding: 80px;
+  }
 }
 
 .trumpet__container {
@@ -238,23 +243,6 @@
 @media only screen and (min-width: 1000px) {
   .content__text {
     width: 45%;
-  }
-}
-.content__text--alternative {
-  padding-top: 40px;
-  margin-right: 30px;
-  border-radius: 5px;
-  border: solid 1px rgb(247, 247, 247);
-  background-color: white;
-}
-@media only screen and (min-width: 1000px) {
-  .content__text--alternative {
-    padding: 50px;
-  }
-}
-@media only screen and not (min-width: 1000px) {
-  .content__text--alternative {
-    width: inherit;
   }
 }
 .content__image {
